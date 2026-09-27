@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wi-Fi Network Auditing using Aircrack-ng</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #0d1117;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #003b20;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #00ff66;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        section {
+            background: #161b22;
+            margin-bottom: 20px;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #00ff66;
+        }
+
+        code {
+            background: #000000;
+            padding: 8px;
+            display: block;
+            color: #00ff66;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        a {
+            color: #00ff66;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .button {
+            display: inline-block;
+            background: #00ff66;
+            color: #000000;
+            padding: 12px 20px;
+            margin: 8px 5px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #00cc55;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #003b20;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🟢 Wi-Fi Network Auditing using Aircrack-ng</h1>
+        <p>Cybersecurity Project</p>
+        <p>Bombothula Mohan Vamsi Yadav</p>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2>🔐 Project Overview</h2>
+
+            <p>
+                This project demonstrates the basic process of performing a
+                Wi-Fi security audit using Kali Linux and the Aircrack-ng
+                toolset in an authorized laboratory environment.
+            </p>
+
+            <p>
+                The project focuses on wireless monitoring, network scanning,
+                WPA/WPA2 authentication, targeted packet capture, handshake
+                capture, and controlled password-strength testing.
+            </p>
+        </section>
+
+        <section>
+            <h2>🎯 Objectives</h2>
+
+            <ul>
+                <li>Check the Wi-Fi adapter</li>
+                <li>Identify the wireless interface</li>
+                <li>Enable monitor mode</li>
+                <li>Scan wireless networks</li>
+                <li>Identify the authorized test network</li>
+                <li>Observe wireless information</li>
+                <li>Capture authorized authentication data</li>
+                <li>Perform controlled password-strength testing</li>
+                <li>Understand Wi-Fi security best practices</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🛠️ Tools Used</h2>
+
+            <ul>
+                <li>Kali Linux</li>
+                <li>Aircrack-ng</li>
+                <li>airmon-ng</li>
+                <li>airodump-ng</li>
+                <li>iwconfig</li>
+                <li>ip link</li>
+                <li>TP-Link 802.11ac USB Wi-Fi Adapter</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>📡 Test Environment</h2>
+
+            <p><strong>SSID:</strong> TP-Link_6922</p>
+            <p><strong>Security:</strong> WPA2</p>
+            <p><strong>Cipher:</strong> CCMP</p>
+            <p><strong>Authentication:</strong> PSK</p>
+            <p><strong>Wireless Interface:</strong> wlan0</p>
+        </section>
+
+        <section>
+            <h2>⚙️ Methodology</h2>
+
+            <ol>
+                <li>Check the Wi-Fi adapter using <strong>iwconfig</strong>.</li>
+                <li>Verify the wireless interface using <strong>ip link</strong>.</li>
+                <li>Check adapter information using <strong>airmon-ng</strong>.</li>
+                <li>Enable monitor mode.</li>
+                <li>Scan available wireless networks.</li>
+                <li>Identify the authorized test access point.</li>
+                <li>Perform targeted packet capture.</li>
+                <li>Observe the controlled client.</li>
+                <li>Capture WPA/WPA2 authentication data.</li>
+                <li>Perform a controlled password-strength test.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>💻 Commands Used</h2>
+
+            <code>iwconfig</code>
+            <code>ip link</code>
+            <code>sudo airmon-ng</code>
+            <code>sudo airmon-ng start wlan0</code>
+            <code>sudo airodump-ng wlan0</code>
+        </section>
+
+        <section>
+            <h2>📊 Results</h2>
+
+            <ul>
+                <li>Wi-Fi adapter detected successfully.</li>
+                <li>wlan0 interface was available.</li>
+                <li>Monitor mode was enabled.</li>
+                <li>Authorized test network was identified.</li>
+                <li>Targeted capture was performed.</li>
+                <li>WPA handshake evidence was captured.</li>
+                <li>Aircrack-ng password-candidate testing was performed.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🛡️ Security Recommendations</h2>
+
+            <ul>
+                <li>Use WPA3 when supported.</li>
+                <li>Use a long and unique Wi-Fi password.</li>
+                <li>Keep router software updated.</li>
+                <li>Change the default router administrator password.</li>
+                <li>Disable WPS when it is not required.</li>
+                <li>Use a separate guest network.</li>
+                <li>Perform security testing only with permission.</li>
+            </ul>
+        </section>
+
+        <!-- PROJECT LINKS -->
+
+        <section>
+            <h2>🔗 Project Links</h2>
+
+            <p>Access the complete project resources below:</p>
+
+            <!-- GitHub Repository -->
+            <a class="button" href="https://github.com/MohanVamsiYadav/WI-FI-NETWORK-AUDITING-USING-AIRCRACK-NG.git"
+                target="_blank">
+                💻 GitHub Repository
+            </a>
+
+            <!-- Detailed Project Report -->
+            <a class="button"
+                href="https://docs.google.com/document/d/12scTyQyRRMkKjVFtJcn8TV-_nTRbzG9fQprNW_Sk42s/edit?usp=sharing"
+                target="_blank">
+                📄 Detailed Project Report
+            </a>
+
+            <!-- Project Deployment -->
+            <a class="button" href="https://github.com/MohanVamsiYadav/WI-FI-NETWORK-AUDITING-USING-AIRCRACK-NG.git"
+                target="_blank">
+                🌐 Project Deployment
+            </a>
+
+
+        </section>
+
+        <section>
+            <h2>📄 Project Report</h2>
+
+            <p>
+                The detailed project report contains the complete methodology,
+                screenshots, findings, recommendations, and conclusion.
+            </p>
+
+            <p>
+                The report documents adapter detection, monitor mode,
+                wireless scanning, targeted capture, WPA handshake capture,
+                and Aircrack-ng password testing.
+            </p>
+        </section>
+
+        <section>
+            <h2>🎥 Project Demonstration</h2>
+
+            <p>
+                The project demonstration and feedback video explains the
+                project process, practical work, and learning outcomes.
+            </p>
+
+        </section>
+
+        <section>
+            <h2>⚠️ Ethical Notice</h2>
+
+            <p>
+                This project was performed in a controlled and authorized
+                laboratory environment. Wi-Fi security testing should only
+                be performed with permission from the network owner.
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Bombothula Mohan Vamsi Yadav</p>
+        <p>Cybersecurity Project</p>
+    </footer>
+
+</body>
+
+</html>
